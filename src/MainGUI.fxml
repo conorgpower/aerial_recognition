@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="440.0" prefWidth="774.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="MainGUIController">
+  <children>
+    <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="440.0000999999975" prefWidth="774.0001220703125">
+      <center>
+        <Pane prefHeight="441.0" prefWidth="325.0">
+          <children>
+            <ImageView fx:id="blackWhiteImageView" fitHeight="230.0" fitWidth="315.0" layoutX="2.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" />
+            <Label id="sheepNumber" fx:id="sheepNumberLabel" layoutX="14.0" layoutY="384.0" prefHeight="26.951171875" prefWidth="233.0" text="Number of Sheep:">
+              <font>
+                <Font size="20.0" />
+              </font>
+            </Label>
+          </children>
+        </Pane>
+      </center>
+      <left>
+        <Pane prefHeight="441.0" prefWidth="102.0">
+          <children>
+            <Button layoutX="19.0" layoutY="327.0" mnemonicParsing="false" onAction="#showFileChooser" text="Open" />
+            <Button layoutX="17.0" layoutY="363.0" mnemonicParsing="false" onAction="#countSheep" text="Count" />
+            <Button layoutX="26.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitApplication" text="Exit" />
+            <Button layoutX="4.0" layoutY="400.0" mnemonicParsing="false" onAction="#identifySheep" text="Draw Rect" />
+          </children>
+        </Pane>
+      </left>
+      <right>
+        <Pane prefHeight="441.0" prefWidth="334.0001220703125">
+          <children>
+            <ImageView id="image" fx:id="imageView" fitHeight="230.0" fitWidth="315.0" layoutX="10.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" />
+          </children>
+        </Pane>
+      </right>
+    </BorderPane>
+  </children>
+</AnchorPane>
